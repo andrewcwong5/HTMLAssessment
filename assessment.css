@@ -2,28 +2,26 @@ h2, h3, h4, h5 {
   color: purple;
 }
 
-.subjectHeader{
+.subjectHeader {
   font-style: sans-serif;
 }
 
-thead, tfoot{
+thead, tfoot {
   color: red;
   font-weight: bold;
-  border-style: solid;
-  border-width: 1px;
 }
-
+table {
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid black;
+}
 #scoreBoard {
   border-style: double;
   border-width: 5px;
   background-color: lightblue;
 }
 
-/* #scoreBoard > li:first-child {
-  border-style: solid;
-  border-width: 3px;
-  background-color: darkblue;
-} */
 .caption {
   border-color: black;
 }
@@ -44,17 +42,25 @@ blockquote {
   height: 0px;
   visibility: hidden;
 }
-
-#teamRoster > li:first-child {
-  background: linear-gradient (rgba(255.255.255.0.75), rgba(255.255.255.0.75)), url("https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Denver_Broncos_logo.svg/200px-Denver_Broncos_logo.svg.png") no-repeat;
+/* #teamRoster > li:first-child {
+  background: linear-gradient(rgba(255.255.255.0.75), rgba(255.255.255.0.75)), url("https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Denver_Broncos_logo.svg/200px-Denver_Broncos_logo.svg.png") no-repeat;
   background-size: contain;
+} */
+#teamRoster > li:first-child {
+  background-image:
+  url("https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
 }
 #teamRoster > li:last-child {
-  background: linear-gradient (rgba(255.255.255.0.75), rgba(255.255.255.0.75)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Chicago_Bears_logo.svg/200px-Chicago_Bears_logo.svg.png") no-repeat;
+  background-image:
+  url("https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg");
   background-size: contain;
+  background-repeat: no-repeat;
 }
-#checkbox-grid > li: {
-  list-style-type: none;
+#checkbox-grid > li {
+  list-style-type: none ;
 }
 ol > li:first-child {
   font-weight: bold;
